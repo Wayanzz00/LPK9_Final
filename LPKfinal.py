@@ -1,11 +1,10 @@
-from altair import Column
 import pandas as pd
 import streamlit as st
 import numpy as np
 from streamlit_option_menu import option_menu
 
 
-#contoh 3
+
 # Define the HTML code with CSS to set the background image
 background = """
 <style>
