@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-from streamlit_option_menu import option_menu
 
 
 # Define the HTML code with CSS to set the background image
@@ -16,6 +15,20 @@ background = """
 
 # Apply the HTML code to set the background image
 st.markdown(background, unsafe_allow_html=True)
+
+def option_menu(menu_title, options):
+    """
+    Create an option menu.
+
+    Parameters:
+        menu_title (str): The title of the menu.
+        options (list): A list of options to be displayed in the menu.
+
+    Returns:
+        str: The selected option.
+    """
+    selected_option = st.sidebar.selectbox(menu_title, options, index=0)
+    return selected_option
 
 #Option Menu Sidebar
 with st.sidebar :
