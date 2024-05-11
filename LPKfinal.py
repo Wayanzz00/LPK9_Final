@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 from streamlit_option_menu import option_menu
-from streamlit_lottie import st_lottie
+
 
 #contoh 3
 # Define the HTML code with CSS to set the background image
